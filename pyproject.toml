@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mokirac-tableparse"
+version = "0.1.0"
+description = "解析时间标记，排列提示词里的表格转结构的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "mokirac" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://mokirac.github.io"
+Repository = "https://github.com/mokirac/tableparse"
+Issues = "https://github.com/mokirac/tableparse/issues"
+
+[project.scripts]
+tableparse = "tableparse:main"
+
+[tool.setuptools]
+py-modules = ["tableparse"]
